@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'media',
   purge: [
     './src/**/*.html',
     './src/**/*.ts',
