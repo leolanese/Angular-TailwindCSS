@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   darkMode: 'media',
   purge: [
@@ -14,10 +16,10 @@ module.exports = {
       xl: '1280px',
       '2xl': '1440px',
     },
-
     extend: {
       colors: {
-        // Here is where you will add our new colors
+        'light-blue': colors.lightBlue,
+        cyan: colors.cyan,
         blue: {
           '100': '#72c1df',
           '200': '#5bb7d9',
