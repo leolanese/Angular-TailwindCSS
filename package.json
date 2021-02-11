@@ -5,13 +5,13 @@
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
     "postcss:build": "postcss src/styles.pcss -o src/styles.css",
   	"prestart": "npm run postcss:build",
-  	"prebuild": "npm run postcss:build -- --env=production"
+  	"prebuild": "npm run postcss:build -- --env=production",
+    "start": "ng serve"
   },
   "private": true,
   "dependencies": {
