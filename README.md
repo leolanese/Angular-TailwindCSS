@@ -58,6 +58,27 @@ module.exports = {
 }
 ```
 
+### Update the PostCSS configuration file
+Angular CLI will take care of adding all the vendor prefixes
+
+```js
+module.exports = {
+  plugins: {
+    tailwindcss: {}
+  }
+}
+```
+
+### Create your PostCSS source file
+```js
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+
+
+
 ## Start
 
 Run `npm start`
