@@ -76,12 +76,22 @@ module.exports = {
 @tailwind utilities;
 ```
 
-
-
+## Add npm scripts to process our CSS
+```js
+{
+  "scripts": {
+    "postcss:build": "postcss src/styles.pcss -o src/styles.css",
+  	"prestart": "npm run postcss:build",
+  	"prebuild": "npm run postcss:build -- --env=production"
+  }
+}
+```
 
 ## Start
 
-Run `npm start`
+```js
+npm start
+```
 
 This will trigger the service pointing at `http://localhost:4200/`
 
