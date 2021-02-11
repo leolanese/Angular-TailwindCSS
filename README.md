@@ -30,7 +30,35 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Start 
+## Install the needed dependencies
+```js
+npm i postcss-cli postcss@latest tailwindcss -DE
+```
+
+## Create your configuration files
+```js
+npx tailwindcss init -p
+```
+
+## Configure Purge CSS
+```js
+module.exports = {
+  purge: [
+    './src/**/*.html',
+    './src/**/*.ts',
+    './projects/**/*.html',
+    './projects/**/*.ts'
+  ],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+}
+```
+
+## Start
 
 Run `npm start`
 
@@ -48,4 +76,3 @@ This will trigger the service pointing at `http://localhost:4200/`
 ##### :radio_button: DEV.to: <a href="https://www.dev.to/leolanese" target="_blank">dev.to/leolanese</a>
 ##### :radio_button: Blog: <a href="https://www.leolanese.com/blog" target="_blank">leolanese.com/blog</a>
 ##### :radio_button: Questions / Suggestion / Recommendation: developer@leolanese.com
-
